@@ -23,13 +23,13 @@ public class Calculator {
     public void selectNine(){addNumber("9");}
 
     public void selectBackspace() {
-        switch(currentNumber) {
-            case "-Infinity", "NaN" -> selectClear();
-            default -> {
-                if(!currentNumber.equals("")) {
-                    currentNumber = currentNumber.substring(0, currentNumber.length()-1);
-                    updateTextField();
-                }
+        if(currentNumber.equals("-Infinity") || currentNumber.equals("NaN")) {
+            selectClear();
+        }
+        else {
+            if(!currentNumber.equals("")) {
+                currentNumber = currentNumber.substring(0, currentNumber.length()-1);
+                updateTextField();
             }
         }
     }
@@ -56,7 +56,7 @@ public class Calculator {
         currentNumber = String.valueOf(currentNumberDouble);
         updateTextField();
     }
-    
+
     public void selectChangeSign(){
         if(!currentNumber.contains("-")) {
             currentNumber = "-" + currentNumber;
