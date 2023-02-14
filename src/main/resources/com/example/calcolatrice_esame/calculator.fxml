@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="450.0" styleClass="anchorPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calcolatrice_esame.Calculator">
+   <children>
+      <VBox prefWidth="450.0">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="textField" alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="334.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="textField" />
+                        <String fx:value="transparent" />
+                     </styleClass>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnBackspace" mnemonicParsing="false" onAction="#selectBackspace" prefHeight="60.0" prefWidth="60.0" styleClass="button2" text="&lt;-">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="btnClear" mnemonicParsing="false" onAction="#selectClear" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="Clear">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnClearAll" mnemonicParsing="false" onAction="#selectClearAll" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="Clear All">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLn" mnemonicParsing="false" onAction="#selectLn" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="ln">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDivide" mnemonicParsing="false" onAction="#selectDivide" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="/">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="btnSeven" mnemonicParsing="false" onAction="#selectSeven" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEight" mnemonicParsing="false" onAction="#selectEight" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNine" mnemonicParsing="false" onAction="#selectNine" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="9">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnMultiply" mnemonicParsing="false" onAction="#selectMultiply" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="*">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="btnFour" mnemonicParsing="false" onAction="#selectFour" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnFive" mnemonicParsing="false" onAction="#selectFive" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSix" mnemonicParsing="false" onAction="#selectSix" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSub" mnemonicParsing="false" onAction="#selectSub" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="-">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="btnOne" mnemonicParsing="false" onAction="#selectOne" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnTwo" mnemonicParsing="false" onAction="#selectTwo" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnThree" mnemonicParsing="false" onAction="#selectThree" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSum" mnemonicParsing="false" onAction="#selectSum" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="+">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="btnDot" mnemonicParsing="false" onAction="#selectDot" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text=".">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnZero" mnemonicParsing="false" onAction="#selectZero" prefHeight="60.0" prefWidth="95.0" styleClass="button1" text="0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnChangeSign" mnemonicParsing="false" onAction="#selectChangeSign" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="+/-">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnResult" mnemonicParsing="false" onAction="#selectResult" prefHeight="60.0" prefWidth="95.0" styleClass="button2" text="=">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+.anchorPane {
+    -fx-background-color: #f0fcfe;
+}
+.textField {
+    -fx-background-radius: 20;
+    -fx-border-color: #7888BC;
+    -fx-border-radius: 20;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #7888BC;
+}
+.button1 {
+    -fx-background-color: #C8E5EB;
+    -fx-background-radius: 15;
+    -fx-text-fill: #2B8F9F;
+}
+.button1:hover {
+    -fx-border-color: #2B8F9F;
+    -fx-border-radius: 15;
+}
+.button2 {
+    -fx-background-color: #ABCDEF;
+    -fx-background-radius: 15;
+    -fx-text-fill: #245F85;
+}
+.button2:hover {
+    -fx-border-color: #7888BC;
+    -fx-border-radius: 15;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
